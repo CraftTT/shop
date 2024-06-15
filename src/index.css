@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;  
+} 
+
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+header {
+  position: relative;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header div.nav {
+  float: right;
+  list-style: none;
+
+}
+header div.nav .login {
+  color: inherit;
+  display: inline;
+  text-decoration: none;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+
+}
+
+header div.nav .login:hover {
+opacity: 0.5;
+}
+
+header ul.nav li a {
+text-decoration: none;
+color: inherit;
+}
+
+header .shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  background: #fafafa;
+  -webkit-box-shadow: 4px 5px 15px -5px #606060; 
+  box-shadow: 4px 5px 15px -5px #606060;
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+
+}
+
+header .shop-cart .empty h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+header .shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+
+}
+header .shop-cart .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item p {
+  color: #797979;
+  font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  color: #d83030;
+  transform: scale(1.5);
+  
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url(./img/bg.jpg) no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+}
+
+header .presentation::after {
+content: "Лучшие товары для вашего дома";
+position: absolute;
+top: 250px;
+left: 150px;
+width: 300px;
+font-size: 40px;
+font-weight: 600;
+color: #fff;
+}
+
+header .presentation::before {
+  content: "По низким ценам";
+position: absolute;
+top: 400px;
+left: 150px;
+width: 300px;
+font-size: 15px;
+font-weight: 300;
+color: #fff;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background: #f5f5f5;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+  cursor: pointer;
+
+}
+
+main .item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease;
+}
+
+main .item img:hover {
+  transform: scale(1.05);
+}
+
+main h2, main p, main b {
+  margin: 10px 20px;
+  color: #333;
+}
+
+main b { color: #5fa36a;}
+
+main .add-to-cart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ca5252 ;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+  transform: scale(1.5) translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  margin: 100px;
+}
+ .content {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form__email {
+  color: #222;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+}
+
+.form__title {
+  color: #222;
+  margin-bottom: 40px;
+ 
+  
+}
+
+.form__field {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  padding: 0 7px;
+}
+
+.form__btn {
+  background-color: #f0f0f0;
+  font-family: inherit;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px ;
+}
+
+.link__to {
+  text-decoration: none;
+  color: #222;
+}
+
+.form__password {
+  position: relative;
+}
+
+.form__eye {
+  position: absolute;
+  top: 50%;
+  right: 5px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.form__create {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.page-number.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn__order {
+  float: right;
+  color: #222;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-family: inherit;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px ;
+}
+
+
+
+
+.content__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form__check {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.form__check h2 {
+  margin-bottom: 10px;
+}
+
+.form__title__check {
+  color: #222;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.order-list__check {
+  margin-bottom: 20px;
+}
+
+.item__check {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.item__check img {
+  width: 70px;
+  margin-right: 15px;
+}
+
+.item__check h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.item__check p {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.item__check__flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+
+.total__check {
+  margin-top: 20px;
+}
+
+.total__check h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn__order__check {
+  background-color: #ca5252;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn__order__check:hover {
+  background-color: #b04242;
+}
+
+/* Дополнительные стили для инпутов и кнопок, если требуется */
+.form__field__check {
+  height: 80px;
+  margin-bottom: 40px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  padding: 0 7px;
+}
+
+.form__btn__check {
+  background-color: #f0f0f0;
+  font-family: inherit;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__btn__check:hover {
+  background-color: #ddd;
+}
+
+
+
+
+/* OrderForm.css */
+.payment-form {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.payment-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #222;
+  font-weight: 600;
+}
+
+.payment-form input {
+  width: 100%;
+  height: 40px;
+  padding: 0 7px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="number"] {
+  background: #fff;
+}
+
+.payment-form input[type="text"]:focus,
+.payment-form input[type="number"]:focus {
+  border-color: #ca5252;
+}
+
+.payment-form__link {
+  background-color: #ca5252;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.payment-form button[type="submit"]:hover {
+  background-color: #b04242;
+}
+
+
+
+
+.back_arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+    background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  text-decoration: none;
+
+}
